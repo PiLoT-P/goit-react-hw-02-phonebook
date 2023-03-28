@@ -38,6 +38,7 @@ class TodoForm extends Component{
                 alert(this.state.name+' is already in contacts');
                 k++;
             }
+            return k;
         })
         if (k > 0) {
             return;
