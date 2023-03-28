@@ -33,13 +33,13 @@ class TodoForm extends Component{
         const todo = { ...this.state, id: uuidv4() };
         let k = 0;
 
-        // this.props.contacts.map((el) => {
-        //     if (el.name === this.state.name) {
-        //         alert(this.state.name+' is already in contacts');
-        //         k++;
-        //     }
-        //     return k;
-        // })
+        this.props.contacts.map((el) => {
+            if (el.name === this.state.name) {
+                alert(this.state.name+' is already in contacts');
+                k++;
+            }
+            return k;
+        })
         if (k > 0) {
             return;
         } else {
